@@ -9,6 +9,8 @@ import EventDetail from "./Components/EventDetail"
 import Ev from "./Components/Ev"
 import Announcement from "./Components/Announcement"
 import PageNotFound from "./Components/PageNotFound"
+import Contacts from "./Components/Contacts"
+import About from "./Components/About"
 
 function App() {
  
@@ -24,6 +26,8 @@ function App() {
         <Route path="/technicalevent" element={<TechnicalEvent />} />
         <Route path="/nontechnicalevent" element={<NontechnicalEvent />} />
         <Route path="*" element={<PageNotFound />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/about" element={<About />} />
 
         
       </Routes>

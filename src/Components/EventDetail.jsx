@@ -7,12 +7,12 @@ const EventDetail = () => {
   const event = events.find((e) => e.id === parseInt(eventid));
 
   if (!event) {
-    return <div>No event found</div>; // Add error handling
+    return <div className=" w-full h-screen bg-[#10182F]  text-white flex justify-center items-center poppins"><p>No event added by developer yet</p></div>; // Add error handling
   }
 
   return (
-    <div className="bg-[#322166] w-full min-h-screen mt-[120px]">
-      <h1 className="text-center bg-gradient-to-r from-pink-600 to-purple-500 pb-4 text-sky-200 pt-7 font-extrabold text-6xl">
+    <div className="bg-[#071857] w-full min-h-screen mt-[100px]">
+      <h1 className="text-center  poppins-extrabold-italic pb-4 text-sky-200 pt-7 font-extrabold text-6xl">
         {event.name || "Quiz Master"} {/* Use event.name instead of hardcoded */}
       </h1>
       <h4 className="text-center font-bold text-white text-3xl p-4">
@@ -20,7 +20,7 @@ const EventDetail = () => {
         <p className="text-[20px] font-normal md:text-2xl">{event.description}</p>
       </h4>
 
-      <div className="text-amber-300 text-2xl md:text-4xl font-poppins pl-5 md:pl-30">
+      <div className="text-amber-300 text-2xl md:text-4xl poppins-regular-italic pl-5 md:pl-30">
         <h1>Event Coordinator: {event.coordinator || "Manish Kumar"}</h1>
         <h1>Contact No: {event.contactNumber || "6380274393"}</h1>
         <h1>Entry Fee: {event.entryFee || "50Rs/Team"}</h1>
