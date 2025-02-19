@@ -12,7 +12,7 @@ const EventDetail = () => {
 
   return (
     <div className="bg-[#071857] w-full min-h-screen mt-[100px]">
-      <h1 className="text-center  poppins-extrabold-italic pb-4 text-sky-200 pt-7 font-extrabold text-6xl">
+      <h1 className="text-center font-mono pb-4 text-sky-200 pt-7 font-extrabold text-6xl">
         {event.name || "Quiz Master"} {/* Use event.name instead of hardcoded */}
       </h1>
       <h4 className="text-center font-bold text-white text-3xl p-4">
@@ -20,17 +20,20 @@ const EventDetail = () => {
         <p className="text-[20px] font-normal md:text-2xl">{event.description}</p>
       </h4>
 
-      <div className="text-amber-300 text-xs md:text-4xl poppins-thin pl-5 md:pl-30">
-        <h1>Event Coordinator: {event.coordinator || "Manish Kumar"}</h1>
+      <div className="text-amber-300 text-xs poppins-thin pl-5 md:pl-30">
+        <div className=" poppins-bold">
+
+        <h1 >Event Coordinator: {event.coordinator || "Manish Kumar"}</h1>
         <h1>Contact No: {event.contactNumber || "6380274393"}</h1>
+        </div>
         {/* <h1>Entry Fee: {event.entryFee || "50Rs/Team"}</h1> */}
-        <div className="text-white text-[25px] mt-5">
-          <h1 className="md:text-4xl font-poppins font-bold text-clip text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
+        <div className="text-white font-serif mt-5">
+          <h1 className="md:text-4xl font-bold text-clip text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
             RULE AND REGULATION
           </h1>
-          <ul>
+          <ul className=" pt-5 poppins-regular">
           {event.rules.map((rule, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 font-poppins">
               👉 {rule}
             </li>
           ))}
