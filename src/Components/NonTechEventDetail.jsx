@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import events from "./Data";
 
-const EventDetail = () => {
+const NonTechEventDetail = () => {
   const { eventid } = useParams();
   const event = events.find((e) => e.id === parseInt(eventid));
 
@@ -20,7 +20,7 @@ const EventDetail = () => {
         <p className="text-[20px] font-normal md:text-2xl">{event.description}</p>
       </h4>
 
-      <div className="text-amber-300 text-xs md:text-4xl poppins-thin pl-5 md:pl-30">
+      <div className="text-amber-300 text-xs md:text-4xl poppins-regular-italic pl-5 md:pl-30">
         <h1>Event Coordinator: {event.coordinator || "Manish Kumar"}</h1>
         <h1>Contact No: {event.contactNumber || "6380274393"}</h1>
         {/* <h1>Entry Fee: {event.entryFee || "50Rs/Team"}</h1> */}
@@ -34,14 +34,14 @@ const EventDetail = () => {
               👉 {rule}
             </li>
           ))}
-           {/* <li className="mt-7">
+           <li className="mt-7">
               <a
                 href={event.registrationLink}
-                className=" poppins-light pl-[10px] pr-[10px] pt-[5px] pb-[5px] md:pl-[50px] md:pr-[50px] md:pt-[15px] mb-10 md:pb-[15px] mt-3 md:mt-[100px] bg-yellow-300 hover:bg-green-300 text-black rounded-full text-center"
+                className="pl-[10px] pr-[10px] pt-[5px] pb-[5px] md:pl-[50px] md:pr-[50px] md:pt-[15px] mb-10 md:pb-[15px] mt-3 md:mt-[100px] bg-yellow-300 hover:bg-green-300 text-black rounded-full text-center"
               >
                 Register Now
               </a>
-            </li> */}
+            </li>
             <li>{/* Add any additional rules here */}</li>
           </ul>
         </div>
@@ -50,4 +50,4 @@ const EventDetail = () => {
   );
 };
 
-export default EventDetail;
+export default NonTechEventDetail;

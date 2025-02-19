@@ -26,7 +26,7 @@ const CountDown = ({ targetDate }) => {
   return (
     <div className="flex max-w-md flex-col items-center p-2 md:p-6 bg-gray-800 text-white rounded-lg shadow-lg">
       <h2 className="md:text-2xl orbitron mb-4 ">Time teft tO Register event</h2>
-      <div className="flex space-x-0 md:space-x-4 text-center">
+      <div className="flex  md:space-x-4 text-center">
         <TimeBlock label="Days" value={timeLeft.days} />
         <TimeBlock label="Hours" value={timeLeft.hours} />
         <TimeBlock label="Minutes" value={timeLeft.minutes} />
@@ -37,9 +37,9 @@ const CountDown = ({ targetDate }) => {
 };
 
 const TimeBlock = ({ label, value }) => (
-  <div className="flex flex-col items-center bg-gray-900 px-4 py-2 rounded-lg">
-    <span className="text-3xl font-bold">{value}</span>
-    <span className="text-sm uppercase text-gray-400">{label}</span>
+  <div className="flex flex-col items-center bg-gray-900 px-1 py-0.5 md:px-4 md:py-2 rounded-lg">
+    <span className="text-xs md:text-3xl font-bold">{value}</span>
+    <span className=" text-xs md:text-sm uppercase text-gray-400">{label}</span>
   </div>
 );
 
