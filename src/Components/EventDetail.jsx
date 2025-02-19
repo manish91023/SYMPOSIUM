@@ -12,7 +12,7 @@ const EventDetail = () => {
 
   return (
     <div className="bg-[#071857] w-full min-h-screen mt-[100px]">
-      <h1 className="text-center font-mono pb-4 text-sky-200 pt-7 font-extrabold text-6xl">
+      <h1 className="text-center font-mono pb-4 text-sky-200 pt-7 font-extrabold text-2xl  md:text-6xl">
         {event.name || "Quiz Master"} {/* Use event.name instead of hardcoded */}
       </h1>
       <h4 className="text-center font-bold text-white text-3xl p-4">
