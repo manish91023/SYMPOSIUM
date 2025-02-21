@@ -10,7 +10,7 @@ export default function Eventcard({title,image,id}) {
         <div className="absolute inset-0 rounded-lg bg-white transition-transform duration-500 -z-10 group-hover:rotate-[20deg]"></div>
         <div className="absolute inset-0 rounded-lg bg-white transition-transform duration-500 -z-10 group-hover:rotate-[10deg] shadow-md"></div>
   
-        {/* Image Box */}
+     
         <div className="absolute inset-[10px] bg-gray-900 transition-all duration-500 z-10 group-hover:bottom-[80px] rounded-md flex-grow">
           <div className={`w-full h-full  bg-center bg-cover relative`}>
             <img className=" w-full h-full bg-cover" src={image} alt="" />

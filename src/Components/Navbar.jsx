@@ -15,8 +15,8 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
           <NavItem to="/" text="Home" />
-          <NavItem to="about" text="About" />
-          <NavItem to="contacts" text="Contact" />
+          <NavItem to="/about" text="About" />
+          <NavItem to="/contacts" text="Contact" />
         </ul>
 
         {/* Mobile Menu Button */}
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="md:hidden bg-gray-900 p-4 space-y-4">
           <NavItem to="/" text="Home" onClick={toggleMenu} />
           <NavItem to="/about" text="About" onClick={toggleMenu} />
-          <NavItem to="contacts" text="Contact" onClick={toggleMenu} />
+          <NavItem to="/contacts" text="Contact" onClick={toggleMenu} />
         </div>
       )}
       <Announcement/>

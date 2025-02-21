@@ -11,6 +11,7 @@ import Announcement from "./Components/Announcement"
 import PageNotFound from "./Components/PageNotFound"
 import Contacts from "./Components/Contacts"
 import About from "./Components/About"
+import ParticleBg from "./Components/Particle/ParticleBg"
 
 function App() {
  
@@ -28,6 +29,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/about" element={<About />} />
+        <Route path="/particle" element={<ParticleBg />} />
 
         
       </Routes>
