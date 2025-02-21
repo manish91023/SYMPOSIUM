@@ -18,9 +18,10 @@ export default function Home() {
       >
         <div className=" flex justify-center items-start gap-[2rem]">
           <div className=" w-full h-screen">
-          <div className=" hidden md:block w-[300px] absolute left-20 mt-16 shadow-2xl ">
+          <div className=" hidden  w-[300px] absolute left-20 mt-16 shadow-2xl md:block ">
             <img className=" w-[300px] h-[200px] " src="/mdai.png" alt="tech logo" />
           </div>
+            <img src="/proudly.png" alt=""  className=" hidden md:block absolute top-[200px] left-[350px] w-[200px] h-[90px]"/>
             <div className=" text-center text-white p-5 mt-[180px]">
               <h2 className="orbitron text-2xl font-serif md:text-5xl   ">
                 Department Of
@@ -42,6 +43,7 @@ bg-[#7bd4fa]
                     src="/mdai.png"
                     alt=""
                   /> */}
+                    <img className=" md:hidden" src="/proudly.png" alt="" />
                   <img
                     className=" md:hidden w-[250px] h-[150px] mt-7  mx-auto"
                     src="/smai.png"
@@ -52,7 +54,7 @@ bg-[#7bd4fa]
                 </div>
                 <div className=" relative">
                   <img
-                    className=" w-[350px] h-[190px] md:w-[580px] md:h-[470px]  mx-auto  "
+                    className=" w-[350px] h-[250px] md:w-[580px] md:h-[470px]  mx-auto  "
                     src="/netrixai.png"
                     alt=""
                   />

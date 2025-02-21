@@ -19,7 +19,7 @@ const Contacts = () => {
           </div>
           <div className=" flex  justify-center items-center gap-3 ml-16 mt-5">
             <img className=" w-16 h-16   " src="/gmail.png" alt="" />
-            <p>manishgga09134455@gmail.com</p>
+            <p className=" pr-[80px]">netrix2k25@gmail.com</p>
           </div>
         </div>
       </div>

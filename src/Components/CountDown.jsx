@@ -25,7 +25,7 @@ const CountDown = ({ targetDate }) => {
 
   return (
     <div className="flex max-w-md flex-col items-center p-2 md:p-6 bg-gray-800 text-white rounded-lg shadow-lg">
-      <h2 className="md:text-2xl orbitron mb-4 ">Time teft tO Register event</h2>
+      <h2 className="md:text-2xl orbitron mb-4 ">Time teft to register event</h2>
       <div className="flex  md:space-x-4 text-center">
         <TimeBlock label="Days" value={timeLeft.days} />
         <TimeBlock label="Hours" value={timeLeft.hours} />

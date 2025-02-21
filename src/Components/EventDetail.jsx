@@ -27,7 +27,9 @@ const EventDetail = () => {
     <div className="relative w-full min-h-screen overflow-hidden">
      
       
-      <div className="relative z-10 bg-opacity-50 bg-[url('/technicalbg.jpg')] md:bg-[url('/technicalbg5.png')] bg-center bg-no-repeat w-full min-h-screen pt-[100px]">
+      <div className="relative z-10 bg-opacity-50 bg-[url('/4kbg.jpeg')] md:bg-[url('/4kbg.jpeg')] bg-cover bg-center bg-no-repeat w-full min-h-screen pt-[100px]">
+      <div class="absolute inset-0 bg-black opacity-50 -z-1"></div>
+        
         <h1 className="text-center font-mono pb-4 text-green-50 pt-7 font-extrabold text-2xl md:text-6xl">
           {event.name || "Quiz Master"}
         </h1>
