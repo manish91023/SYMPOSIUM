@@ -110,7 +110,7 @@ const events = [
       id: 8,
       name: "Inkspeller",
       description: "A writing competition where participants craft short stories, poetry, or essays based on an on-the-spot theme.",
-      coordinator: "MD FAISL HUSSAIN",
+      coordinator: "MD FAISAL HUSSAIN",
       contactNumber: "6205734209",
       rules: [
           "Individual entries only; no group submissions.",
