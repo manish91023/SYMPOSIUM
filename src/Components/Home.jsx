@@ -1,5 +1,5 @@
 import Card from "./Card";
-import logo from "/tech.svg";
+
 import CountDown from "./CountDown";
 import Venue from "./Venue";
 import Announcement from "./Announcement";

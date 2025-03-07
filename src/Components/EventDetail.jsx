@@ -43,6 +43,13 @@ const EventDetail = () => {
             <h1>Event Coordinator: {event.coordinator || "Manish Kumar"}</h1>
             <h1>Contact No: {event.contactNumber || "6380274393"}</h1>
           </div>
+          {
+            event.theme && (
+              <div className=" text-white text-xl poppins-thin  mt-2 ">
+                <h1 className=" text-[16px] font-light md:text-xl"><span className=" poppins-bold text-green-500 md:text-pink-500 ">Theme: </span>{event.theme}</h1>
+              </div>
+            )
+          }
 
           <div className="text-white   font-serif mt-5">
             <h1 className=" text-xl md:text-4xl font-bold text-transparent bg-clip-text bg-green-600 md:bg-gradient-to-r from-pink-500 to-black">

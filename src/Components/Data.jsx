@@ -32,7 +32,7 @@ const events = [
       description: "Participants create and present posters on innovative tech solutions, new inventions, or emerging technologies.",
       coordinator: "DHANUSH",
       contactNumber: "8940128060",
-      theme: "AI for All",
+      theme: "AI for All- Participants will create posters that showcase innovative SI dolutions,new inventions , or emerging technologies aimed at making AI accessible and  benificial for everyone",
       rules: [
           "Group participation is allowed; team size can be 2 or 3 members.",
           "Posters must be original works created during the event and adhere to the theme 'AI for All.'",

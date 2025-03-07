@@ -10,7 +10,8 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 mb-8 w-full bg-emerald-50 text-black shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <img className=" w-[250px] h-[70px]" src="/vmccavit.webp" alt="" />
+        <img className=" w-[270px] h-[90px]" src="/vmccavit.webp" alt="" />
+        <img className=" w-[150px] h-[100px]" src="/award.png" alt="" />
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
